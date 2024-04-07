@@ -72,3 +72,8 @@ CONFIG_ZMK_BLE_PASSKEY_ENTRY=n
 CONFIG_ZMK_BLE=y
 CONFIG_ZMK_USB=y
 CONFIG_ZMK_HID_INDICATORS=y
+
+# Change idle timeout to 10 minutes
+# while it increases power use overall I don't want to lose the backlight after 30 seconds
+# Mostly cause it's really distracting
+CONFIG_ZMK_IDLE_TIMEOUT=600000
